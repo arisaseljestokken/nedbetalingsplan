@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"></link>
+    <title>Nedbetalingsplan</title>
+  </head>
+  <body>
+    <div class="split left">
+      <div class="center">
+        <img src="assets/img/profile.png"></img>
+        <div class="textInfo">
+          <p>
+            Har du planer om å ta opp et stort lån? Kanskje du skal ta opp lån
+            for å kjøpe drømmeleiligheten eller drømmebilen? Uansett hva du tar
+            opp et lån for, er det viktig at du er klar over tiden det vil ta å
+            tilbakebetale lånet, og hvor stor andel av rentene kan bli i det
+            lange løpet. Fyll inn informasjon om lånet ditt nedenfor, og få en
+            oversikt over lånet med en enkel og oversiktlig nedsbetalingplan.
+          </p>
+        </div>
+        <div class="inputField">
+          <form id="inputValues">
+            <p>
+              Lånebeløp
+              <input
+                value="2000000"
+                type="text"
+                id="laanebelop"
+                pattern="[0-9]"
+                minlength="4"
+                maxlength="8"
+              />
+            </p>
+            <p>
+              Første innbetalingsdato
+              <input type="date" value="2020-02-01" id="forsteBetaling" />
+            </p>
+            <p>
+              Ferdig nedbetalt innen
+              <input type="date" value="2045-01-01" id="utlopsdato" />
+            </p>
+            <p>
+              Nominell rente
+              <input
+                type="text"
+                value="3"
+                id="nominellRente"
+                pattern="[0-9]"
+                minlength="1"
+                maxlength="5"
+              />
+            </p>
+            <p>
+              Termingebyr
+              <input
+                type="text"
+                value="30"
+                id="termingebyr"
+                pattern="[0-9]"
+                minlength="1"
+                maxlength="5"
+              />
+            </p>
+            <button type="button" id="mainButton" onClick="makeRepaymentplan()">
+              Se nedbetalingsplan
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="split right">
+      <div class="center">
+        <img src="assets/img/table.png"></img>
+        <div class="placeholderText">
+          <p id="placeholderNedbetalingsplan">
+            Fyll inn informasjon om lånet ditt til venstre, så vil
+            nedbetalingsplanen dukke opp her.
+          </p>
+        </div>
+        <div class="repaymentTable">
+          <div class="childRepaymentTable">
+            <table id="tab"></table>
+          </div>
+        </div>
+        <div class="summary">
+          <h1 id="summaryTitle"></h1>
+          <p id="summaryText"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

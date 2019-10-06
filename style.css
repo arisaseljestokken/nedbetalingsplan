@@ -1,0 +1,140 @@
+.split{
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left{
+    left: 0;
+    background-color:#872A22;
+}
+
+.right{
+    right: 0;
+    background-color: #2B2B2B;
+}
+
+.center {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.center img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.textInfo {
+    padding: 1% 0 1% 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.5
+}
+
+.inputField p{
+    text-align: right;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.inputField input{
+    font-size: 14px;
+    text-align: center;
+    width: 25%;
+    padding: 1.5%;
+    margin: 0 30% 0 5%;
+}
+
+.inputField input[type=date]{
+    padding: 1.5% 0% 1.5% 0%;
+}
+
+.inputField input:focus{
+    font-weight: bold;
+}
+
+.inputField button{
+    background-color: #2B2B2B;
+    border-radius: 3px;
+    border-color:#ffffff;
+    border-width: 1px;
+    padding: 2.5%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color:#ffffff;
+    margin: 3% 30% 0 30%;
+}
+
+.placeholderText {    
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.5;
+    padding: 1% 0 1% 0;
+}
+
+.repaymentTable{
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+}
+
+.childRepaymentTable{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 20px;
+}
+
+.repaymentTable table{
+    background-color: #F2AF40;
+    color: #000;
+    border: 2.5px solid #872A22;
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 2.5;
+    width: 100%;
+}
+
+.dateColumn{
+    width: 30%;
+    border-top: 2px solid #2B2B2B;
+    border-right: 2px solid #2B2B2B;
+}
+
+.sumColumn{
+    width: 20%;
+    border-top: 2px solid #2B2B2B;
+    border-right: 2px solid #2B2B2B;
+}
+
+.taxColumn{
+    width: 20%;
+    border-top: 2px solid #2B2B2B;
+    border-right: 2px solid #2B2B2B;
+}
+.loanColumn{
+    width: 30%;
+    border-top: 2px solid #2B2B2B;
+}
+
+.summary{
+    color: #fff;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+}
